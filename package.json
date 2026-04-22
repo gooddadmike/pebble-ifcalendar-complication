@@ -1,0 +1,33 @@
+{
+  "name": "pebble-ifcalendar-complication",
+  "author": "Mike Searcy @gooddadmike",
+  "version": "1.0.0",
+  "files": [
+    "dist.zip"
+  ],
+  "keywords": [
+    "pebble-package"
+  ],
+  "dependencies": {
+    "ifcalendar-js": "^1.0.5"
+  },
+  "pebble": {
+    "projectType": "package",
+    "sdkVersion": "3",
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint"
+    ],
+    "resources": {
+      "media": []
+    },
+    "capabilities": ["configurable"],
+    "messageKeys": [
+      "IFC_Text"
+    ]
+  }
+}
