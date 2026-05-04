@@ -17,4 +17,8 @@ exports.init = function() {
   Pebble.addEventListener('ready', function() {
     sendDate();
   });
+  // Re-send if the watch requests an update (e.g. after wakeup)
+  Pebble.addEventListener('appmessage', function() {
+    sendDate();
+  });
 };
